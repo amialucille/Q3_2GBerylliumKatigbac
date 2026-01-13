@@ -68,3 +68,13 @@ body{
     background: #5c3a21;
     }
     
+    input[type="radio"]{
+    width: auto;
+    margin-right: 5px;
+    }
+    
+    .radio-group{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    }
