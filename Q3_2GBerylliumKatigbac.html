@@ -57,27 +57,28 @@ el.classList.remove("error");
 }
 }
 
-function showData(){
-        if(!confirm("Are you sure you want to submit this application?")){
-        return false;
-        }
 
-        let output = `
-        <h2>Submitted Information</h2>
-        Student ID: ${document.querySelector('[name="studentid"]').value}<br>
-        Full Name: ${document.querySelector('[name="fullname"]').value}<br>
-        Birthday: ${document.querySelector('[name="birthday"]').value}<br>
-        Email: ${document.querySelector('[name="email"]').value}<br>
-        Mobile: ${document.querySelector('[name="mobile"]').value}<br>
-        Grade: ${document.querySelector('[name="grade"]').value}<br>
-        Status: ${document.querySelector('input[name="status"]:checked').value}<br>
-        Club: ${document.querySelector('[name="club"]').value}<br>
-        Reason: ${document.querySelector('[name="reason"]').value}<br>
-        `;
-
-        document.body.innerHTML += output;
-        return false; // stops page redirect (no 404)
+        // read from the localStorage saved as a string - to see if there are anything saved on the users coomputer
+        let acctString = localStorage.getItem("accounts")
+        if (!acctString) { accountList = "No Accounts Found" } // initialize the variable to contain the list of accounts object
+        else {
+            
+            accountList = JSON.parse(acctString) // converts string into the correct data type in this case object    
+            rowString = "<tr><th>Username</th><th>DOB</th><th>Gender</th><th>DP Check</th><th>About</th></tr>";
+            // results.innerHTML = ""  // resets the table
+            console.log(accountList)
+            for (let key in accountList) {
+                rowString += "<tr>";
+                rowString += "<td>" + key + "</td>";
+                rowString += "<td>" + accountList[key].dob + "</td>";
+                rowString += "<td>" + accountList[key].gender + "</td>";
+                rowString += "<td>" + accountList[key].dp + "</td>";
+                rowString += "<td>" + accountList[key].about + "</td></tr>";
+            }
         }
+        results.innerHTML = rowString;
+
+    
 
 </script>
 </head>
