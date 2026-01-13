@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Organization Application Form</title>
+<link rel="stylesheet" href="styles.css">
 
 <style>
 body{
@@ -56,30 +57,6 @@ el.classList.add("error");
 el.classList.remove("error");
 }
 }
-
-
-        // read from the localStorage saved as a string - to see if there are anything saved on the users coomputer
-        let acctString = localStorage.getItem("accounts")
-        if (!acctString) { accountList = "No Accounts Found" } // initialize the variable to contain the list of accounts object
-        else {
-            
-            accountList = JSON.parse(acctString) // converts string into the correct data type in this case object    
-            rowString = "<tr><th>Username</th><th>DOB</th><th>Gender</th><th>DP Check</th><th>About</th></tr>";
-            // results.innerHTML = ""  // resets the table
-            console.log(accountList)
-            for (let key in accountList) {
-                rowString += "<tr>";
-                rowString += "<td>" + key + "</td>";
-                rowString += "<td>" + accountList[key].dob + "</td>";
-                rowString += "<td>" + accountList[key].gender + "</td>";
-                rowString += "<td>" + accountList[key].dp + "</td>";
-                rowString += "<td>" + accountList[key].about + "</td></tr>";
-            }
-        }
-        results.innerHTML = rowString;
-
-    
-
 </script>
 </head>
 

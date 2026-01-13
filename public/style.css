@@ -1,0 +1,70 @@
+body{
+    background: #f5efe6;
+    font-family: Arial, sans-serif;
+    padding: 25px;
+    width: 80%;
+    margin: auto;
+    color: #4b2e1e;
+    }
+    
+    h1{
+    color: #5c3a21;
+    text-align: center;
+    }
+    
+    fieldset{
+    border: 2px solid #8b5e3c;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #fff7f0;
+    }
+    
+    legend{
+    background: #5c3a21;
+    color: #fff3e0;
+    padding: 6px 12px;
+    font-weight: bold;
+    }
+    
+    label{
+    display: block;
+    margin: 12px 0;
+    }
+    
+    input, select, textarea{
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+    border: 1px solid #a47148;
+    border-radius: 4px;
+    font-size: 14px;
+    }
+    
+    input:focus, textarea:focus, select:focus{
+    border: 2px solid #5c3a21;
+    background: #f3e6d8;
+    outline: none;
+    }
+    
+    .error{
+    border: 2px solid #a52a2a !important;
+    background: #fbe3e3;
+    }
+    
+    input[type="submit"], input[type="reset"]{
+    width: auto;
+    padding: 10px 18px;
+    margin-right: 10px;
+    border: none;
+    background: #8b5e3c;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    }
+    
+    input[type="submit"]:hover,
+    input[type="reset"]:hover{
+    background: #5c3a21;
+    }
+    
