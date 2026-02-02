@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url("assets/bg_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* MAIN GLASS CONTAINER */
+.w3-container {
+  text-align: center;
+  color: #f8f4e3; /* ivory text */
+  padding-top: 50px;
+  margin-top: 60px;
+  padding-left: 50%;
+  transform: translateX(90%);
+  max-width: 50%;
+
+  background: rgba(10, 25, 60, 0.55); /* navy glass */
+  border-radius: 50px;
+  padding: 50px 50px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 30px rgba(10, 25, 60, 0.6);
+}
+
+/* MAIN TITLE */
+.w3-container h1 {
+  font-family: 'Princess Sofia', cursive;
+  font-size: 5em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.1;
+
+  /* Ivory → soft navy gradient */
+  background: linear-gradient(to bottom,
+    #fffdf5 0%,
+    #f2ead3 40%,
+    #d9d2b6 70%,
+    #b8c2d9 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    2px 2px 0 #ffffff,
+    3px 3px 4px #0a1f44,
+    0 0 10px rgba(200, 210, 235, 0.7);
+
+  margin-bottom: 0;
+}
+
+/* SUBTITLE */
+.w3-container h2 {
+  font-family: 'Princess Sofia', cursive;
+  font-size: 3em;
+  color: #f5f1df; /* ivory */
+  text-shadow:
+    2px 2px 0 #1b2f5b,
+    1px 1px 0 #ffffff;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* LIST */
+.w3-container ul {
+  list-style-type: none;
+  text-align: left;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.w3-container li {
+  font-size: 2em;
+  font-family: 'Comic Sans MS', sans-serif;
+  text-shadow: 1px 1px 2px #0a1f44; /* navy shadow */
+  margin-bottom: 10px;
+  color: #fbf7e8; /* soft ivory */
+}
+
+/* LINKS */
+.w3-container a {
+  color: #f8f4e3; /* ivory */
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.w3-container a:visited {
+  color: #d6dff5; /* pale navy tint */
+}
+
+.w3-container a:hover,
+.w3-container a:focus {
+  color: #ffffff;
+  background: rgba(20, 40, 90, 0.6); /* navy highlight */
+  text-decoration: underline;
+  box-shadow: 0 0 12px rgba(20, 40, 90, 0.8);
+  transform: scale(1.05);
+}
+
+.w3-container a:focus-visible {
+  outline: 2px solid #f2ead3; /* ivory outline */
+  outline-offset: 3px;
+}

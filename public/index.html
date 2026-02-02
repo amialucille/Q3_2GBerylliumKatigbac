@@ -1,156 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Organization Application Form</title>
-<link rel="stylesheet" href="/public/style.css">
-
-<style>
-body{
-padding: 25px;
-font-family: Arial;
-width: 80%;
-margin-left: 10%;
-}
-
-fieldset{
-margin-bottom: 20px;
-padding: 15px;
-}
-
-legend{
-background: black;
-color: yellow;
-padding: 5px 10px;
-}
-
-label{
-display: block;
-margin: 10px 0;
-}
-
-input:focus, textarea:focus, select:focus{
-border: 2px solid blue;
-background: #eef6ff;
-outline: none;
-}
-
-.error{
-border: 2px solid red !important;
-background: #ffe6e6;
-}
-</style>
-
-<script>
-function confirmSubmit(){
-return confirm("Are you sure you want to submit this application?");
-}
-
-function confirmReset(){
-return confirm("Are you sure you want to clear all the information?");
-}
-
-function checkEmpty(el){
-if(el.value.trim() === ""){
-el.classList.add("error");
-}else{
-el.classList.remove("error");
-}
-}
-</script>
+  <title>Pascual Portfolio</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap" rel="stylesheet">
 </head>
-
 <body>
-<h1>Centralized Club / Organization Application</h1>
-<h3>Q3_2GBerylliumKatigbac</h3>
-
-<form method="post" action="submit"
-onsubmit="return confirmSubmit()"
-onreset="return confirmReset()">
-
-<fieldset>
-<legend>Personal Information</legend>
-
-<label>
-Student ID:
-<input type="number" name="studentid" required
-onblur="checkEmpty(this)">
-</label>
-
-<label>
-Full Name:
-<input type="text" name="fullname" required
-onblur="checkEmpty(this)">
-</label>
-
-<label>
-Birthday:
-<input type="date" name="birthday" required>
-</label>
-
-<label>
-Email Address:
-<input type="email" name="email" required
-onblur="checkEmpty(this)">
-</label>
-</fieldset>
-
-<fieldset>
-<legend>Application Details</legend>
-
-<label>
-Mobile Phone:
-<input type="text" name="mobile" required
-onblur="checkEmpty(this)">
-</label>
-
-<label>
-Grade Level:
-<select name="grade" required>
-<option value="">-- Select --</option>
-<option value="g7">Grade 7</option>
-<option value="g8">Grade 8</option>
-<option value="g9">Grade 9</option>
-<option value="g10">Grade 10</option>
-<option value="g11">Grade 11</option>
-<option value="g12">Grade 12</option>
-</select>
-</label>
-
-<label>
-Intern / Extern:
-<input type="radio" name="status" value="IN" required> Intern
-<input type="radio" name="status" value="EX"> Extern
-</label>
-
-<label>
-Preferred Organization / Club:
-<select name="club" required>
-<option value="">-- Choose Club/Org --</option>
-<option value="vball">Kislap</option>
-<option value="bball">Pallastro</option>
-<option value="bio">Karyo Biomedical Society</option>
-<option value="chem">ATOM</option>
-<option value="bake">Bake Club</option>
-<option value="arts">Likha</option>
-<option value="eng">The Science Scholar</option>
-<option value="fil">Ang Lagablab</option>
-</select>
-</label>
-
-<label>
-Why do you want to join?
-<textarea name="reason" rows="4" required
-onblur="checkEmpty(this)"></textarea>
-</label>
-</fieldset>
-
-<fieldset>
-<legend>Actions</legend>
-<input type="submit" value="Submit Application">
-<input type="reset" value="Reset Form">
-</fieldset>
-
-</form>
+  <section class="w3-container">
+    <h1>Links to <br> Gabrielle Pascual's Work</h1>
+    <h2>3rd Quarter</h2>
+    <nav>
+      <ul>
+        <li><a href="public/Q3_2GRubidiumPascual.html">2nd Graded Exercise</a></li>
+        <li><a href="public/Q3_3GRubidiumPascual.html">3rd Graded Exercise</a></li>
+      </ul>
+    </nav>
+  </section>
 </body>
 </html>
